@@ -1,150 +1,184 @@
+html
+  font-size: 10px
+  @media screen and (max-width: 768px)
+    font-size: 8px
 body
   font-family: 'Montserrat', sans-serif
   .content
     position: relative
     display: flex
     justify-content: center
-  .bg 
-    width: 100%
-    position: absolute
-    top: 0
-    background: url(../img/header_bg.png) no-repeat
-    height: 150vh
-    background-position: center
-    background-size: cover
-    margin: 0 auto
-    overflow: hidden
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 52%)
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 52%)
-    z-index: 1
-  .max-width
-    margin: 0 auto
-    z-index: 5
-    position: absolute
-    top: 0
-    max-width: 1200px
-    flex-wrap: nowrap
-    .left_column
-      .corporate-top__black
-        padding: 34px 100px 0
-        background-color: rgba(0, 0, 0, 0.8)
-        height: 969px
-        &-hr
-          height: 41px
-          background-color: #ffffff
-        &-text
+    .bg 
+      width: 100%
+      position: absolute
+      top: 0
+      background: url(../img/header_bg.png) no-repeat
+      height: 150vh
+      background-position: center
+      background-size: cover
+      margin: 0 auto
+      overflow: hidden
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 52%)
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 52%)
+      z-index: 1
+    .max-width
+      margin: 0 auto
+      z-index: 5
+      position: absolute
+      top: 0
+      max-width: 1200px
+      flex-wrap: nowrap
+      .left_column
+        .corporate-top__black
+          padding: 34px 100px 0
+          background-color: rgba(0, 0, 0, 0.8)
+          height: 969px
+          @media screen and (max-width: 768px)
+            padding: 34px 25px 0
+            height: 849px
+          &-hr
+            height: 41px
+            background-color: #ffffff
+          &-text
+            p
+              color: #ffffff
+              font-family: Montserrat
+              font-size: 10rem
+              font-weight: 700
+              text-transform: uppercase
+              letter-spacing: 21.67px
+              text-align: center
+          &-discription
+            p
+              font-family: "Montserrat - Semi Bold"
+              font-size: 3.2rem
+              font-weight: 400
+              text-transform: uppercase
+              color: white
+              text-align: center
+              margin-top: 72px
+        .corporate-top__yellow
+          padding: 115px 100px 0
+          position: absolute
+          width: 95%
+          top: 769px
+          background-color: #f5d515
+          -webkit-clip-path: polygon(0 0, 100% 24%, 100% 100%, 0% 100%)
+          clip-path: polygon(0 0, 100% 24%, 100% 100%, 0% 100%)
+          height: 821px
+          @media screen and (max-width: 768px)
+            padding: 164px 20px 0
+            position: absolute
+            width: 92%
+            top: 635px
+            height: 683px
           p
-            color: #ffffff
-            font-family: Montserrat
-            font-size: 100px
+            font-size: 6rem
             font-weight: 700
             text-transform: uppercase
-            letter-spacing: 21.67px
-            text-align: center
-        &-discription
-          p
-            font-family: "Montserrat - Semi Bold"
-            font-size: 1.7rem
+          .text-color__black
+            color: #000000
+            font-family: Montserrat
+            font-size: 2.4rem
             font-weight: 400
-            text-transform: uppercase
+          .text-color__white
+            margin-top: 20px
+            display: block
             color: white
-            text-align: center
-            margin-top: 72px
-      .corporate-top__yellow
-        padding: 115px 100px 0
-        position: absolute
-        width: 95%
-        top: 769px
-        background-color: #f5d515
-        -webkit-clip-path: polygon(0 0, 100% 24%, 100% 100%, 0% 100%)
-        clip-path: polygon(0 0, 100% 24%, 100% 100%, 0% 100%)
-        height: 821px
-        p
-          font-size: 55px
-          font-weight: 700
-          text-transform: uppercase
-        .text-color__black
-          color: #000000
-          font-family: Montserrat
-          font-size: 24px
-          font-weight: 400
-        .text-color__white
-          margin-top: 20px
-          display: block
-          color: white
-          font-family: Montserrat
-          font-size: 24px
-          font-weight: 400
-      .barcode_block
-        padding: 50px
-        position: absolute
-        top: 1590px
-        text-align: center
-        width: 95%
-        p 
-          font-family: Montserrat
-          font-size: 24px
-          font-weight: 400
-        span
-          display: block
-          margin-top: 10px
-          font-family: Montserrat
-          font-size: 18px
-          font-weight: 400
-      .corporate-bottom__red
-        padding: 50px
-        position: absolute
-        top: 2033px
-        text-align: center
-        width: 95%
-        background-color: #e7371d
-        span
-          color: white
+            font-family: Montserrat
+            font-size: 2.4rem
+            font-weight: 400
+        .barcode_block
+          padding: 50px
+          top: 1590px
+          position: absolute
+          text-align: center
+          width: 95%
+          @media screen and (max-width: 768px)
+            top: 1361px
+            padding: 0px
+          p 
+            font-family: Montserrat
+            font-size: 2.4rem
+            font-weight: 400
+          span
+            display: block
+            margin-top: 10px
+            font-family: Montserrat
+            font-size: 18px
+            font-weight: 400
+        .corporate-bottom__red
+          padding: 50px
+          position: absolute
+          top: 2033px
+          text-align: center
+          width: 95%
+          background-color: #e7371d
+          @media screen and (max-width: 768px)
+            padding: 31px
+            top: 1733px
+          span
+            color: white
+            font-size: 1.5rem
 
-  .right_column
-    color: #000000
-    .brand-logo
-      background-color: rgba(255, 33, 0, 0.8)
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%)
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%)
-      height: 485px
-      padding: 34px 100px 0
-      text-align: center
-      color: white
-      text-transform: uppercase
-      img
-        margin-bottom: 30px
-      h1 
-        font-size: 45px
-        font-weight: 700
-      p
-        font-size: 19px
-        font-weight: 400
-    .we_are
-      margin-top: 755px
-      h1
-        font-size: 55px
+    .right_column
+      color: #000000
+      .brand-logo
+        background-color: rgba(255, 33, 0, 0.8)
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%)
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%)
+        height: 485px
+        padding: 34px 100px 0
+        text-align: center
+        color: white
         text-transform: uppercase
-        font-weight: 700
-      hr
-        background-color: #d3dedd
-        height: 10px
-        margin: 40px 0
-      h3
-        font-size: 40px
-        text-transform: uppercase
-        font-weight: 700
-      span
-        font-size: 20px
-        padding: 15px
-        display: block
-      .first
-          margin-bottom: 120px
-    .contacts
-      text-align: right
-      h1
-        font-size: 39px
-        text-transform: uppercase
-        font-weight: 700
-      span
-        font-size: 28px
+        @media screen and (max-width: 768px)
+          padding: 34px 60px 0
+        img
+          margin-bottom: 30px
+        h1 
+          font-size: 4.5rem
+          font-weight: 700
+        p
+          font-size: 19px
+          font-weight: 400
+      .we_are
+        margin-top: 755px
+        @media screen and (max-width: 768px)
+          margin-top: 560px
+        h1
+          font-size: 5.5rem
+          text-transform: uppercase
+          font-weight: 700
+        hr
+          background-color: #d3dedd
+          height: 10px
+          margin: 40px 0
+        h3
+          font-size: 40px
+          text-transform: uppercase
+          font-weight: 700
+        span
+          font-size: 2rem
+          padding: 15px
+          display: block
+        .first
+            margin-bottom: 100px
+            @media screen and (max-width: 768px)
+              margin-bottom: 50px
+      .contacts
+        text-align: right
+        h1
+          font-size: 3.9rem
+          text-transform: uppercase
+          font-weight: 700
+          @media screen and (max-width: 768px)
+            font-size: 3rem
+        p
+          font-size: 2.5rem
+          @media screen and (max-width: 768px)
+            font-size: 2rem
+
+    
+  .corporare-top__black
+    padding: 18px 25px 0
